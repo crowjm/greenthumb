@@ -4,56 +4,44 @@
 		<title>GreenThumb</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/responsive-nav.js"></script>
 		<script src="//use.typekit.net/juk4res.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<header>
 			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies"><!--
-			--><nav class="mobile">
-				<button ng-click="showMenu()" class="mobile-nav-button">MORE</button>
-				<div class="wrapper" ng-show="mobileMenu">
-					<ul>
-						<li><a href="rec-info.html">Get Recommendation</a></li>
-						<li><a href="rec.html">View Recommendations</a></li>
-						<li><a href="journal-entry.html">Update Journal</a></li>
-						<li><a href="journal.html">View Journal</a></li>
-						<li><a href="#">Sign Out</a></li>
-					</ul>
-				</div>
-			</nav><!--
-			--><div class="add-color">
-				<div class="wrapper">
-					<nav class="desktop">
-						<ul>
-							<li><a href="rec-info.html">Get Recommendation</a></li>
-							<li><a href="rec.html">View Recommendations</a></li>
-							<li><a href="journal-entry.html">Update Journal</a></li>
-							<li><a href="journal.html">View Journal</a></li>
-							<li><a href="#">Sign Out</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			--><nav class="nav-collapse">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rec-info.html">Get Recommendation</a></li>
+					<li><a href="rec.html">View Recommendations</a></li>
+					<li><a href="journal-entry.html">Update Journal</a></li>
+					<li><a href="journal.html">View Journal</a></li>
+				</ul>
+			</nav>
 		</header>
 		<div class="wrapper">
-	<form class="journal-form">
-		<div>
-			<img src="images/sidecarrots.gif" alt="carrots" class="carrots">
-			<h1>About My Garden</h1>
+			<form class="journal-form">
+				<div>
+					<img src="images/sidecarrots.gif" alt="carrots" class="carrots">
+					<h1>About My Garden</h1>
+				</div>
+				<div class="journal-entry">
+					<h3>What I Planted</h3>
+					<p>Type of Plant</p><input type="text" class="plants">
+					<p>Quantity of Plant</p><input type="text" class="quantity">
+					<h3>Notes</h3>
+					<textarea></textarea>
+				</div>
+				<button><a href="journal.html">SUBMIT</a></button>
+			</form>
 		</div>
-		<div class="journal-entry">
-			<h3>What I Planted</h3>
-			<p>Type of Plant</p><input type="text" class="plants">
-			<p>Quantity of Plant</p><input type="text" class="quantity">
-			<h3>Notes</h3>
-			<textarea></textarea>
-		</div>
-		<button><a href="journal.html">SUBMIT</a></button>
-	</form>
-</div>
-<footer>
-				<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
-			</footer>
-			</body>
-			</html>
+		<footer>
+			<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
+		</footer>
+		<script>
+		var nav = responsiveNav(".nav-collapse");
+		</script>
+	</body>
+</html>

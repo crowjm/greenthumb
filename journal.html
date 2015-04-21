@@ -4,72 +4,60 @@
 		<title>GreenThumb</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/responsive-nav.js"></script>
 		<script src="//use.typekit.net/juk4res.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<header>
 			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies"><!--
-			--><nav class="mobile">
-				<button ng-click="showMenu()" class="mobile-nav-button">MORE</button>
-				<div class="wrapper" ng-show="mobileMenu">
-					<ul>
-						<li><a href="rec-info.html">Get Recommendation</a></li>
-						<li><a href="rec.html">View Recommendations</a></li>
-						<li><a href="journal-entry.html">Update Journal</a></li>
-						<li><a href="journal.html">View Journal</a></li>
-						<li><a href="#">Sign Out</a></li>
-					</ul>
-				</div>
-			</nav><!--
-			--><div class="add-color">
-				<div class="wrapper">
-					<nav class="desktop">
-						<ul>
-							<li><a href="rec-info.html">Get Recommendation</a></li>
-							<li><a href="rec.html">View Recommendations</a></li>
-							<li><a href="journal-entry.html">Update Journal</a></li>
-							<li><a href="journal.html">View Journal</a></li>
-							<li><a href="#">Sign Out</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			--><nav class="nav-collapse">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rec-info.html">Get Recommendation</a></li>
+					<li><a href="rec.html">View Recommendations</a></li>
+					<li><a href="journal-entry.html">Update Journal</a></li>
+					<li><a href="journal.html">View Journal</a></li>
+				</ul>
+			</nav>
 		</header>
 		<div class="wrapper">
-<div>
-	<img src="images/sidecarrots.gif" alt="illustration of carrots" class="centered-carrots">
-	<h1>Journal Entries</h1>
-</div>
-<div class="journal-group">
-<div class="journal">
-			<p>April 24, 2015</p>
-			<h3 class="journal-quantity">1</h3>
-			<h3 class="journal-plant">Tomato</h3>
-			<p>Destroyed by the hailstorm. :(</p>
-</div>
-<div class="journal">
-			<p>April 12, 2015</p>
-			<h3 class="journal-quantity">3</h3>
-			<h3 class="journal-plant">Tomatoes</h3>
-			<p>Today I got started on my summer garden by planting 3 bucket tomatoes. Hopefully they'll take off!</p>
-</div>
-<div class="journal">
-			<p>October 31, 2014</p>
-			<h3 class="journal-quantity">4</h3>
-			<h3 class="journal-plant">Spinach / </h3>
-			<h3 class="journal-quantity">3</h3>
-			<h3 class="journal-plant">Cabbage / </h3>
-			<h3 class="journal-quantity">12</h3>
-			<h3 class="journal-plant">Carrots / </h3>
-			<h3 class="journal-quantity">6</h3>
-			<h3 class="journal-plant">Radishes</h3>
-			<p>Getting ready for the winter with these crops! Excited to taste the fruits of my labor.</p>
-</div>
-</div>
-</div>
-<footer>
-				<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
-			</footer>
-			</body>
-			</html>
+			<div>
+				<img src="images/sidecarrots.gif" alt="illustration of carrots" class="centered-carrots">
+				<h1>Journal Entries</h1>
+			</div>
+			<div class="journal-group">
+				<div class="journal">
+					<p>April 24, 2015</p>
+					<h3 class="journal-quantity">1</h3>
+					<h3 class="journal-plant">Tomato</h3>
+					<p>Destroyed by the hailstorm. :(</p>
+				</div>
+				<div class="journal">
+					<p>April 12, 2015</p>
+					<h3 class="journal-quantity">3</h3>
+					<h3 class="journal-plant">Tomatoes</h3>
+					<p>Today I got started on my summer garden by planting 3 bucket tomatoes. Hopefully they'll take off!</p>
+				</div>
+				<div class="journal">
+					<p>October 31, 2014</p>
+					<h3 class="journal-quantity">4</h3>
+					<h3 class="journal-plant">Spinach / </h3>
+					<h3 class="journal-quantity">3</h3>
+					<h3 class="journal-plant">Cabbage / </h3>
+					<h3 class="journal-quantity">12</h3>
+					<h3 class="journal-plant">Carrots / </h3>
+					<h3 class="journal-quantity">6</h3>
+					<h3 class="journal-plant">Radishes</h3>
+					<p>Getting ready for the winter with these crops! Excited to taste the fruits of my labor.</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
+		</footer>
+		<script>
+		var nav = responsiveNav(".nav-collapse");
+		</script>
+	</body>
+</html>
