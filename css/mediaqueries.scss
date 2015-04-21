@@ -27,11 +27,31 @@
 }
 
 /***rec page***/
-.companion-planting, .rec {
+.first-rec {
+	margin-top: 0;
+}
+
+.rec {
+	width: 45%;
+	float: left;
+}
+
+.rec:nth-of-type(even) {
+	margin-right: 10%;
+}
+
+.rec-group {
+	overflow: hidden;
+	margin-bottom: 4rem;
+}
+
+.companion-planting {
 	max-width: (($col * 9) + ($gut * 8));
 	margin-left: auto;
 	margin-right: auto;
+	clear: both;
 }
+
 
 /***journal update page***/
 .journal-entry {
@@ -42,13 +62,17 @@
 
 /***journal page***/
 .journal {
-	@include grid(6);
-	height: 440px;
+	width: 45%;
+	float: left;
 }
 
-.journal:nth-of-type(odd) {
-	margin-right: 0;
+.journal:nth-of-type(even) {
+	margin-right: 10%;
 }
+
+.journal-group {
+	margin-bottom: 4rem;
+	overflow: hidden;
 }
 
 @media screen and (min-width: 747px) {
@@ -87,20 +111,36 @@
 }
 }
 
-@media screen and (min-width:1000px) {
-
-/***journal page***/
-.journal {
-	@include grid(4);
+@media screen and (min-width:850px) {
+/***view rec page***/
+.rec {
+	width: 30%;
+	float: left;
 }
 
-.journal:nth-of-type(odd) {
-	margin-right: $gut;
+.rec:nth-of-type(3n+3) {
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
-.journal:nth-of-type(3n+1) {
+.rec:nth-of-type(even) {
 	margin-right: 0;
 }
 
 
+/***journal page***/
+.journal {
+	width: 30%;
+	float: left;
+}
+
+.journal:nth-of-type(even) {
+	margin-right: 0;
+}
+
+.journal:nth-of-type(3n+2) {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+}
 }

@@ -14,11 +14,11 @@
 			<button ng-click="showMenu()" class="mobile-nav-button">MORE</button>
 			<div class="wrapper" ng-show="mobileMenu">
 				<ul>
-					<li><a href="">Get Recommendation</a></li>
-					<li><a href="">View Recommendations</a></li>
-					<li><a href="">Update Journal</a></li>
-					<li><a href="">View Journal</a></li>
-					<li><a href="">Sign Out</a></li>
+					<li><a href="rec-info.html">Get Recommendation</a></li>
+					<li><a href="rec.html">View Recommendations</a></li>
+					<li><a href="journal-entry.html">Update Journal</a></li>
+					<li><a href="journal.html">View Journal</a></li>
+					<li><a href="#">Sign Out</a></li>
 				</ul>
 			</div>
 		</nav><!--
@@ -26,11 +26,11 @@
 		<div class="wrapper">
 		<nav class="desktop">
 				<ul>
-					<li><a href="">Get Recommendation</a></li>
-					<li><a href="">View Recommendations</a></li>
-					<li><a href="">Update Journal</a></li>
-					<li><a href="">View Journal</a></li>
-					<li><a href="">Sign Out</a></li>
+					<li><a href="rec-info.html">Get Recommendation</a></li>
+					<li><a href="rec.html">View Recommendations</a></li>
+					<li><a href="journal-entry.html">Update Journal</a></li>
+					<li><a href="journal.html">View Journal</a></li>
+					<li><a href="#">Sign Out</a></li>
 				</ul>			
 			</nav>
 		</div>
@@ -41,11 +41,45 @@
 		<img src="images/sidecarrots.gif" alt="illustration of carrots" class="centered-carrots">
 		<h1>My Recommendations</h1>
 	</div>
-		<div class="rec">
-			<!--recs here-->
+	<div class="rec-group">
+		<div class="rec first-rec">
+			<h3>Texas / April / Full Sun</h3>
+			<ul>
+				<li>Watermelon</li>
+				<li>Okra</li>
+				<li>Tomatoes</li>
+				<li>Hot Peppers</li>
+				<li>Yellow Squash</li>
+			</ul>
 		</div>
+		<div class="rec">
+			<h3>Texas / September / Full Sun</h3>
+			<ul>
+				<li>Brussel Sprouts</li>
+				<li>Cauliflower</li>
+				<li>Chard</li>
+				<li>Kale</li>
+				<li>Dill</li>
+			</ul>
+		</div>
+		<div class="rec">
+			<h3>Texas / October / Some Sun</h3>
+			<ul>
+				<li>Spinach</li>
+				<li>Radishes</li>
+				<li>Cabbage</li>
+				<li>Broccoli</li>
+				<li>Carrots</li>
+			</ul>
+		</div>
+	</div>
 	<div class="companion-planting">
 		<p>Did you know that some plants don't get along? Read about <a href="http://www.motherearthnews.com/organic-gardening/companion-planting-guide-zmaz81mjzraw.aspx">companion planting</a> before you plant your seeds!</p>
 	</div>
-	<button class="log-garden"><a href="journal-entry">LOG GARDEN</a></button>
+	<button class="log-garden"><a href="journal-entry.html">LOG GARDEN</a></button>
 </div>
+<footer>
+				<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
+			</footer>
+			</body>
+			</html>

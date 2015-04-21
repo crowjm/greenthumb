@@ -92,6 +92,9 @@ h1, h2, h3, p, label, li, a, .rec, em {
 a:hover {
   color: white; }
 
+button a:hover {
+  color: #a2ae79; }
+
 .log-in-links a:hover {
   color: #a2ae79; }
 
@@ -214,55 +217,12 @@ form {
   margin-right: auto;
   margin-left: auto; }
 
-/***log in, sign up, forgot password screens***/
-.log-in {
-  margin-bottom: 5.262%;
-  margin-top: 3.508%;
-  text-align: center; }
-
-.field {
-  margin-bottom: 3.508%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-  .field input {
-    padding: 0.25em;
-    border: 1px solid #163821;
-    border-radius: 3px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-
-.actions {
-  margin-bottom: 1.754%;
-  margin-top: 1.754%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 9em; }
-  .actions input {
-    width: 9em;
-    padding: 0.5em 0.5em;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #163821;
-    border: 3px solid #163821;
-    border-radius: 3px;
-    background-color: #a2ae79; }
-  .actions input:hover {
-    color: #a2ae79;
-    background-color: #163821;
-    border: 3px solid #a2ae79; }
-
-.checkbox {
-  margin-bottom: 3.508%;
-  text-align: center;
-  width: 18.75em;
-  margin-left: auto;
-  margin-right: auto; }
-
-.log-in-links {
-  margin-bottom: 1.754%; }
+/***index***/
+.info {
+  margin-bottom: 4em;
+  margin-top: 4em; }
+  .info p {
+    margin-bottom: 2.5em; }
 
 /***main screen, first after log in***/
 .welcome {
@@ -281,7 +241,8 @@ form {
     border: 1px solid #163821;
     font-family: "adelle-sans", serif;
     font-weight: 400;
-    font-size: 0.75em; }
+    font-size: 0.75em;
+    width: 50%; }
   .dropdown-rec select:focus {
     outline: none;
     border: 5px solid #8fbcf1; }
@@ -297,7 +258,10 @@ form {
 
 /***Recommendation Page***/
 .rec {
-  margin-bottom: 5.262%; }
+  margin-bottom: 2.5rem; }
+
+.first-rec {
+  margin-top: 4rem; }
 
 .rec-header-info {
   display: inline-block;
@@ -363,10 +327,25 @@ textarea {
     margin-bottom: 10.524%; }
 
   /***rec page***/
-  .companion-planting, .rec {
+  .first-rec {
+    margin-top: 0; }
+
+  .rec {
+    width: 45%;
+    float: left; }
+
+  .rec:nth-of-type(even) {
+    margin-right: 10%; }
+
+  .rec-group {
+    overflow: hidden;
+    margin-bottom: 4rem; }
+
+  .companion-planting {
     max-width: 74.557%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    clear: both; }
 
   /***journal update page***/
   .journal-entry {
@@ -376,14 +355,16 @@ textarea {
 
   /***journal page***/
   .journal {
-    width: 49.12%;
-    float: left;
-    margin-right: 1.754%;
-    height: 440px; }
+    width: 45%;
+    float: left; }
 
-  .journal:nth-of-type(odd) {
-    margin-right: 0; } }
-@media screen and (min-width: 747px) {
+  .journal:nth-of-type(even) {
+    margin-right: 10%; }
+
+  .journal-group {
+    margin-bottom: 4rem;
+    overflow: hidden; } }
+@media screen and (min-width: 675px) and (min-width: 747px) {
   /***nav***/
   .mobile {
     display: none; }
@@ -411,17 +392,29 @@ textarea {
           color: white; }
       .desktop ul li:last-of-type {
         margin-right: 0; } }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 675px) and (min-width: 850px) {
+  /***view rec page***/
+  .rec {
+    width: 30%;
+    float: left; }
+
+  .rec:nth-of-type(3n+3) {
+    margin-right: 5%;
+    margin-left: 5%; }
+
+  .rec:nth-of-type(even) {
+    margin-right: 0; }
+
   /***journal page***/
   .journal {
-    width: 32.162%;
-    float: left;
-    margin-right: 1.754%; }
+    width: 30%;
+    float: left; }
 
-  .journal:nth-of-type(odd) {
-    margin-right: 1.754%; }
+  .journal:nth-of-type(even) {
+    margin-right: 0; }
 
-  .journal:nth-of-type(3n+1) {
-    margin-right: 0; } }
+  .journal:nth-of-type(3n+2) {
+    margin-right: 5%;
+    margin-left: 5%; } }
 
 /*# sourceMappingURL=main.css.map */

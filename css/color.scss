@@ -16,6 +16,10 @@ a:hover {
 	color: white;
 }
 
+button a:hover {
+	color: $lightgreen;
+}
+
 .log-in-links a:hover {
 	color: $lightgreen;
 }
