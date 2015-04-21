@@ -6,10 +6,16 @@
 	width: 85%;
 	max-width: 1140px;
 	margin: 0 auto;
+	clear: both;
 }
 
 header, footer {
 	width: 100%;
+}
+
+header {
+	overflow: hidden;
+	margin-bottom: 4rem;
 }
 
 footer {
@@ -52,53 +58,6 @@ footer {
 
 .logo {
 	display: block;
-}
-
-/*nav*/
-.desktop {
-	display: none;
-}
-
-.mobile {
-	background-color: lighten($orange, 10%);
-	min-height: 4em;
-	margin-bottom: ($gut *4);
-	overflow: hidden;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-		.mobile-nav-button {
-			float: right;
-			margin: 0.5em 1em 0 0;
-			width: 5em;
-		}
-		.mobile-menu {
-			display: none;
-		}
-		.expand {
-			display: block !important;
-		}
-}
-
-button {
-		width: 208px;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		padding: 0.5em 0.5em;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		color: $darkgreen;
-		border: 3px solid $darkgreen;
-		border-radius: 3px;
-		background-color: $lightgreen;
-		margin-bottom: 1em;
-	}
-
-button:hover {
-	color: $lightgreen;
-	background-color: $darkgreen;
-	border: 3px solid $lightgreen;
 }
 
 .info {
