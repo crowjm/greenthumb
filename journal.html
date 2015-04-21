@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GreenThumb</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//use.typekit.net/juk4res.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body>
+		<header>
+			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies"><!--
+			--><nav class="mobile">
+				<button ng-click="showMenu()" class="mobile-nav-button">MORE</button>
+				<div class="wrapper" ng-show="mobileMenu">
+					<ul>
+						<li><a href="">Get Recommendation</a></li>
+						<li><a href="">View Recommendations</a></li>
+						<li><a href="">Update Journal</a></li>
+						<li><a href="">View Journal</a></li>
+						<li><a href="">Sign Out</a></li>
+					</ul>
+				</div>
+			</nav><!--
+			--><div class="add-color">
+				<div class="wrapper">
+					<nav class="desktop">
+						<ul>
+							<li><a href="">Get Recommendation</a></li>
+							<li><a href="">View Recommendations</a></li>
+							<li><a href="">Update Journal</a></li>
+							<li><a href="">View Journal</a></li>
+							<li><a href="">Sign Out</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+<div>
+	<img src="images/sidecarrots.gif" alt="illustration of carrots" class="centered-carrots">
+	<h1>Journal Entries</h1>
+</div>
+<div class="journal">
+			<p>{{ journal.timeStamped }}</p>
+			<h2 class="journal-quantity">{{ journal.plantQuantity }}</h2>
+			<h2 class="journal-plant">{{journal.plantType}}</h2>
+			<p>{{ journal.plantNotes }}</p>
+</div>
+</div>

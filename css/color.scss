@@ -1,0 +1,41 @@
+$lightblue: #8fbcf1;
+$lightgreen: #a2ae79;
+$darkgreen: #163821;
+$orange: #f59e41;
+
+
+.logo, footer {
+	background-color: lighten($orange, 10%);;
+}
+
+h1, h2, h3, p, label, li, a, .rec, em {
+	color: $darkgreen;
+}
+
+a:hover {
+	color: white;
+}
+
+.log-in-links a:hover {
+	color: $lightgreen;
+}
+
+.desktop > ul > li > a:hover {
+	color: $darkgreen;
+}
+
+.field {
+	input:focus {
+		background-color: $lightblue;
+		outline: none;
+		color: $darkgreen;
+	}
+}
+
+.add-color {
+	background-color: lighten($orange, 10%);
+}
+
+form {
+	background-color: lighten($lightblue, 15%);
+}

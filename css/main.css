@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-family: "museo-sans", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.2; }
+
+h2 {
+  font-family: "museo-sans", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.625em;
+  line-height: 1.2; }
+
+h3 {
+  font-family: "museo-sans", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 1.2; }
+
+p, li, label, input, textarea, .rec, em {
+  font-family: "adelle-sans", serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6; }
+
+button {
+  font-family: "adelle-sans", serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  font-family: "adelle-sans", serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6;
+  font-style: italic; }
+
+.logo, footer {
+  background-color: #f8b771; }
+
+h1, h2, h3, p, label, li, a, .rec, em {
+  color: #163821; }
+
+a:hover {
+  color: white; }
+
+.log-in-links a:hover {
+  color: #a2ae79; }
+
+.desktop > ul > li > a:hover {
+  color: #163821; }
+
+.field input:focus {
+  background-color: #8fbcf1;
+  outline: none;
+  color: #163821; }
+
+.add-color {
+  background-color: #f8b771; }
+
+form {
+  background-color: #d3e5f9; }
+
+/***Base for global and mobile***/
+/***general layout***/
+.wrapper {
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+header, footer {
+  width: 100%; }
+
+footer {
+  clear: both;
+  margin-top: 2em; }
+  footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center; }
+  footer a {
+    border-bottom: 1px solid white; }
+
+.photo, img {
+  width: 100%; }
+
+.carrots {
+  width: 25%; }
+
+.centered-carrots {
+  width: 15%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.754%; }
+
+.log-in-carrots {
+  width: 15%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.754%;
+  margin-top: 2em; }
+
+.logo {
+  display: block; }
+
+/*nav*/
+.desktop {
+  display: none; }
+
+.mobile {
+  background-color: #f8b771;
+  min-height: 4em;
+  margin-bottom: 7.016%;
+  overflow: hidden;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  .mobile .mobile-nav-button {
+    float: right;
+    margin: 0.5em 1em 0 0;
+    width: 5em; }
+  .mobile .mobile-menu {
+    display: none; }
+  .mobile .expand {
+    display: block !important; }
+
+button {
+  width: 208px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 0.5em 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #163821;
+  border: 3px solid #163821;
+  border-radius: 3px;
+  background-color: #a2ae79;
+  margin-bottom: 1em; }
+
+button:hover {
+  color: #a2ae79;
+  background-color: #163821;
+  border: 3px solid #a2ae79; }
+
+.info {
+  margin-bottom: 5.262%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h2, h1 {
+  text-align: center;
+  margin-bottom: 3.508%; }
+
+form {
+  border-radius: 3px;
+  padding: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/***log in, sign up, forgot password screens***/
+.log-in {
+  margin-bottom: 5.262%;
+  margin-top: 3.508%;
+  text-align: center; }
+
+.field {
+  margin-bottom: 3.508%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .field input {
+    padding: 0.25em;
+    border: 1px solid #163821;
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.actions {
+  margin-bottom: 1.754%;
+  margin-top: 1.754%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9em; }
+  .actions input {
+    width: 9em;
+    padding: 0.5em 0.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #163821;
+    border: 3px solid #163821;
+    border-radius: 3px;
+    background-color: #a2ae79; }
+  .actions input:hover {
+    color: #a2ae79;
+    background-color: #163821;
+    border: 3px solid #a2ae79; }
+
+.checkbox {
+  margin-bottom: 3.508%;
+  text-align: center;
+  width: 18.75em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.log-in-links {
+  margin-bottom: 1.754%; }
+
+/***main screen, first after log in***/
+.welcome {
+  margin-bottom: 5.262%;
+  text-align: center; }
+
+.get-growing {
+  margin-bottom: 5em; }
+
+/***Get A Recommendation Page***/
+.dropdown-rec {
+  margin-bottom: 7.016%; }
+  .dropdown-rec h3 {
+    margin-bottom: 0.877%; }
+  .dropdown-rec select {
+    border: 1px solid #163821;
+    font-family: "adelle-sans", serif;
+    font-weight: 400;
+    font-size: 0.75em; }
+  .dropdown-rec select:focus {
+    outline: none;
+    border: 5px solid #8fbcf1; }
+
+.last-dropdown-rec {
+  margin-bottom: 14.032%; }
+
+.info p {
+  color: #2c6f41; }
+
+.get-garden {
+  margin-bottom: 4.5em; }
+
+/***Recommendation Page***/
+.rec {
+  margin-bottom: 5.262%; }
+
+.rec-header-info {
+  display: inline-block;
+  margin-right: 1.754%; }
+
+.companion-planting {
+  background-color: #8fbcf1;
+  padding: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 2em; }
+  .companion-planting a {
+    border-bottom: 1px solid white; }
+
+.log-garden {
+  margin-bottom: 5em; }
+
+/***Journal Update Page***/
+.journal-entry h3 {
+  margin-bottom: 1em;
+  margin-top: 1em; }
+.journal-entry input {
+  margin-bottom: 0.75em; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 2.5em; }
+
+.journal-form {
+  margin-bottom: 5em; }
+
+/***Journal View Page***/
+.journal {
+  margin-bottom: 3.508%;
+  padding: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.journal-quantity, .journal-plant {
+  display: inline-block; }
+
+/***medium media query***/
+@media screen and (min-width: 675px) {
+  /***nav***/
+  .mobile .mobile-links {
+    display: inline; }
+    .mobile .mobile-links li {
+      display: inline; }
+
+  /***rec info page***/
+  .dropdown-rec {
+    max-width: 74.557%;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .dropdown-rec {
+    margin-bottom: 3.508%; }
+
+  .last-dropdown-rec {
+    margin-bottom: 10.524%; }
+
+  /***rec page***/
+  .companion-planting, .rec {
+    max-width: 74.557%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /***journal update page***/
+  .journal-entry {
+    max-width: 74.557%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /***journal page***/
+  .journal {
+    width: 49.12%;
+    float: left;
+    margin-right: 1.754%;
+    height: 440px; }
+
+  .journal:nth-of-type(odd) {
+    margin-right: 0; } }
+@media screen and (min-width: 747px) {
+  /***nav***/
+  .mobile {
+    display: none; }
+
+  .desktop {
+    display: block;
+    margin-bottom: 7.016%;
+    background-color: #f8b771; }
+    .desktop ul {
+      overflow: hidden;
+      max-width: 675px;
+      margin: 0 auto; }
+      .desktop ul li {
+        float: left;
+        background-color: #f8b771;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        font-size: 0.9em;
+        margin-right: 5%; }
+        .desktop ul li a:hover {
+          color: white; }
+      .desktop ul li:last-of-type {
+        margin-right: 0; } }
+@media screen and (min-width: 1000px) {
+  /***journal page***/
+  .journal {
+    width: 32.162%;
+    float: left;
+    margin-right: 1.754%; }
+
+  .journal:nth-of-type(odd) {
+    margin-right: 1.754%; }
+
+  .journal:nth-of-type(3n+1) {
+    margin-right: 0; } }
+
+/*# sourceMappingURL=main.css.map */

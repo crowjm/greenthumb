@@ -1,0 +1,293 @@
+/***Base for global and mobile***/
+
+
+/***general layout***/
+.wrapper {
+	width: 85%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header, footer {
+	width: 100%;
+}
+
+footer {
+	clear: both;
+	margin-top: 2em;
+	p {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: center;
+	}
+	a {
+		border-bottom: 1px solid white;
+	}
+}
+
+.photo, img {
+	width: 100%;
+}
+
+.carrots {
+	width: 25%;
+}
+
+.centered-carrots {
+	width: 15%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: $gut;
+}
+
+.log-in-carrots {
+	width: 15%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: $gut;
+	margin-top: 2em;
+}
+
+.logo {
+	display: block;
+}
+
+/*nav*/
+.desktop {
+	display: none;
+}
+
+.mobile {
+	background-color: lighten($orange, 10%);
+	min-height: 4em;
+	margin-bottom: ($gut *4);
+	overflow: hidden;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+		.mobile-nav-button {
+			float: right;
+			margin: 0.5em 1em 0 0;
+			width: 5em;
+		}
+		.mobile-menu {
+			display: none;
+		}
+		.expand {
+			display: block !important;
+		}
+}
+
+button {
+		width: 208px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		padding: 0.5em 0.5em;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: $darkgreen;
+		border: 3px solid $darkgreen;
+		border-radius: 3px;
+		background-color: $lightgreen;
+		margin-bottom: 1em;
+	}
+
+button:hover {
+	color: $lightgreen;
+	background-color: $darkgreen;
+	border: 3px solid $lightgreen;
+}
+
+.info {
+	margin-bottom: ($gut * 3);
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2, h1 {
+	text-align: center;
+	margin-bottom: ($gut * 2);
+}
+
+form {
+	border-radius: 3px;
+	padding: 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/***log in, sign up, forgot password screens***/
+.log-in {
+	margin-bottom: ($gut * 3);
+	margin-top: ($gut * 2);
+	text-align: center;
+}
+
+.field {
+	margin-bottom: ($gut * 2);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	input {
+		padding: 0.25em;
+		border: 1px solid #163821;
+		border-radius: 3px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+.actions {
+	margin-bottom: $gut;
+	margin-top: $gut;
+	margin-left: auto;
+	margin-right: auto;
+	width: 9em;
+	input {
+		width: 9em;
+		padding: 0.5em 0.5em;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: $darkgreen;
+		border: 3px solid $darkgreen;
+		border-radius: 3px;
+		background-color: $lightgreen;
+	}
+	input:hover {
+		color: $lightgreen;
+		background-color: $darkgreen;
+		border: 3px solid $lightgreen;
+	}
+}
+
+.checkbox {
+	margin-bottom: ($gut * 2);
+	text-align: center;
+	width: 18.75em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.log-in-links {
+	margin-bottom: $gut;
+}
+
+
+/***main screen, first after log in***/
+.welcome {
+	margin-bottom: ($gut * 3);
+	text-align: center;
+}
+
+.get-growing {
+	margin-bottom: 5em; 
+}
+
+
+/***Get A Recommendation Page***/
+.dropdown-rec {
+	margin-bottom: ($gut * 4);
+	h3 {
+		margin-bottom: ($gut * 0.5);
+	}
+	select {
+		border: 1px solid $darkgreen;
+		font-family: "adelle-sans", serif;
+		font-weight: 400;
+		font-size: 0.75em;
+	}
+	select:focus {
+		outline: none;
+		border: 5px solid $lightblue;
+	}
+}
+
+.last-dropdown-rec {
+	margin-bottom: ($gut * 8);
+}
+
+.info {
+	p {
+		color: lighten($darkgreen, 15%);
+	}
+}
+
+.get-garden {
+	margin-bottom: 4.5em;
+}
+
+/***Recommendation Page***/
+.rec {
+	margin-bottom: ($gut * 3);
+}
+
+.rec-header-info {
+	display: inline-block;
+	margin-right: $gut;
+}
+
+.companion-planting {
+	background-color: $lightblue;
+	padding: 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin-bottom: 2em;
+	a {
+		border-bottom: 1px solid white;
+	}
+}
+
+.log-garden {
+	margin-bottom: 5em;
+}
+
+
+
+/***Journal Update Page***/
+.journal-entry {
+	h3 {
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	input {
+		margin-bottom: 0.75em;
+	}
+}
+
+textarea {
+	width: 100%;
+	margin-bottom: 2.5em;
+}
+
+.journal-form {
+	margin-bottom: 5em;
+}
+
+
+
+/***Journal View Page***/
+.journal {
+	margin-bottom: ($gut * 2);
+	padding: 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.journal-quantity, .journal-plant {
+	display: inline-block;
+}
