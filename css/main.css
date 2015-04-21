@@ -253,6 +253,26 @@ footer {
 .logo {
   display: block; }
 
+button {
+  width: 208px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 0.5em 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #163821;
+  border: 3px solid #163821;
+  border-radius: 3px;
+  background-color: #a2ae79;
+  margin-bottom: 1em; }
+
+button:hover {
+  color: #a2ae79;
+  background-color: #163821;
+  border: 3px solid #a2ae79; }
+
 .info {
   margin-bottom: 5.262%;
   max-width: 600px;
