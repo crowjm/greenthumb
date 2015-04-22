@@ -127,6 +127,14 @@ footer {
 .carrots {
   width: 25%; }
 
+.log-in-carrots {
+  width: 15%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.754%;
+  margin-top: 2em; }
+
 .centered-carrots {
   width: 15%;
   display: block;
