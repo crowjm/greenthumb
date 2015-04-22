@@ -47,15 +47,6 @@ footer {
 	margin-bottom: $gut;
 }
 
-.log-in-carrots {
-	width: 15%;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: $gut;
-	margin-top: 2em;
-}
-
 .logo {
 	display: block;
 }
@@ -136,9 +127,6 @@ form {
 	}
 	select {
 		border: 1px solid $darkgreen;
-		font-family: "adelle-sans", serif;
-		font-weight: 400;
-		font-size: 0.75em;
 		width: 50%;
 	}
 	select:focus {

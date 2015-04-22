@@ -45,31 +45,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1 {
+h1, h2, h3 {
   font-family: "museo-sans", Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 2em;
   line-height: 1.2; }
+
+h1 {
+  font-weight: 900;
+  font-size: 2em; }
 
 h2 {
-  font-family: "museo-sans", Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.625em;
-  line-height: 1.2; }
+  font-size: 1.625em; }
 
 h3 {
-  font-family: "museo-sans", Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 1.3em;
-  line-height: 1.2; }
+  font-size: 1.3em; }
 
-p, li, label, input, textarea, .rec, em {
-  font-family: "adelle-sans", serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.6; }
-
-button {
+p, li, label, input, textarea, .rec, em, button, a {
   font-family: "adelle-sans", serif;
   font-weight: 400;
   font-size: 1em;
@@ -77,11 +69,12 @@ button {
 
 a {
   text-decoration: none;
+  font-style: italic; }
+
+select {
   font-family: "adelle-sans", serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.6;
-  font-style: italic; }
+  font-size: 0.75em; }
 
 .logo, footer, header {
   background-color: #f8b771; }
@@ -95,115 +88,14 @@ a:hover {
 button a:hover {
   color: #a2ae79; }
 
-.log-in-links a:hover {
-  color: #a2ae79; }
-
-.desktop > ul > li > a:hover {
-  color: #163821; }
-
 .field input:focus {
   background-color: #8fbcf1;
   outline: none;
   color: #163821; }
 
-.add-color {
-  background-color: #f8b771; }
-
 form {
   background-color: #d3e5f9; }
 
-/*! responsive-nav.js 1.0.39 by @viljamis */
-.nav-collapse ul {
-  margin: 0;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-  width: 100%;
-  display: block;
-  list-style: none; }
-
-.nav-collapse li {
-  width: 100%;
-  display: block; }
-
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-  background-color: #f8b771; }
-
-.nav-collapse.opened {
-  max-height: 9999px; }
-
-.nav-toggle {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  float: right;
-  display: block;
-  padding: 0.5em 0.5em;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #163821;
-  border: 3px solid #163821;
-  border-radius: 3px;
-  background-color: #a2ae79;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  margin-right: 1rem; }
-
-.nav-toggle:hover {
-  color: #a2ae79;
-  background-color: #163821;
-  border: 3px solid #a2ae79; }
-
-@media screen and (min-width: 800px) {
-  .js .nav-collapse {
-    position: relative; }
-
-  .js .nav-collapse.closed {
-    max-height: none; }
-
-  .nav-toggle {
-    display: none; }
-
-  .nav-collapse ul {
-    max-width: 675px;
-    overflow: hidden;
-    margin: 0 auto; }
-
-  .nav-collapse li {
-    float: left;
-    margin-right: 5%; }
-
-  .nav-collapse li:nth-of-type(1) {
-    width: 40px; }
-
-  .nav-collapse li:nth-of-type(2) {
-    width: 142px; }
-
-  .nav-collapse li:nth-of-type(3) {
-    width: 157px; }
-
-  .nav-collapse li:nth-of-type(4) {
-    width: 101px; }
-
-  .nav-collapse li:nth-of-type(5) {
-    width: 84px; }
-
-  .nav-collapse a {
-    font-size: 0.9em; }
-
-  .nav-collapse li:last-of-type {
-    margin-right: 0; } }
 /***Base for global and mobile***/
 /***general layout***/
 .wrapper {
@@ -241,14 +133,6 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.754%; }
-
-.log-in-carrots {
-  width: 15%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 1.754%;
-  margin-top: 2em; }
 
 .logo {
   display: block; }
@@ -316,9 +200,6 @@ form {
     margin-bottom: 0.877%; }
   .dropdown-rec select {
     border: 1px solid #163821;
-    font-family: "adelle-sans", serif;
-    font-weight: 400;
-    font-size: 0.75em;
     width: 50%; }
   .dropdown-rec select:focus {
     outline: none;
@@ -385,12 +266,6 @@ textarea {
 
 /***medium media query***/
 @media screen and (min-width: 675px) {
-  /***nav***/
-  .mobile .mobile-links {
-    display: inline; }
-    .mobile .mobile-links li {
-      display: inline; }
-
   /***rec info page***/
   .dropdown-rec {
     max-width: 74.557%;
@@ -441,34 +316,6 @@ textarea {
   .journal-group {
     margin-bottom: 4rem;
     overflow: hidden; } }
-@media screen and (min-width: 675px) and (min-width: 747px) {
-  /***nav***/
-  .mobile {
-    display: none; }
-
-  .desktop {
-    display: block;
-    margin-bottom: 7.016%;
-    background-color: #f8b771; }
-    .desktop ul {
-      overflow: hidden;
-      max-width: 675px;
-      margin: 0 auto; }
-      .desktop ul li {
-        float: left;
-        background-color: #f8b771;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        text-align: center;
-        font-size: 0.9em;
-        margin-right: 5%; }
-        .desktop ul li a:hover {
-          color: white; }
-      .desktop ul li:last-of-type {
-        margin-right: 0; } }
 @media screen and (min-width: 675px) and (min-width: 850px) {
   /***view rec page***/
   .rec {

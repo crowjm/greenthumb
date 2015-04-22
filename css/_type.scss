@@ -1,32 +1,24 @@
-h1 {
+h1, h2, h3 {
 	font-family: "museo-sans", Helvetica, sans-serif;
+	line-height: 1.2;
+}
+
+h1 {
 	font-weight: 900;
 	font-size: 2em;
-	line-height: 1.2;
 }
 
 h2 {
-	font-family: "museo-sans", Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 1.625em;
-	line-height: 1.2;
 }
 
 h3 {
-	font-family: "museo-sans", Helvetica, sans-serif;
 	font-weight: 500;
 	font-size: 1.3em;
-	line-height: 1.2;
 }
 
-p, li, label, input, textarea, .rec, em {
-	font-family: "adelle-sans", serif;
-	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.6;
-}
-
-button {
+p, li, label, input, textarea, .rec, em, button, a {
 	font-family: "adelle-sans", serif;
 	font-weight: 400;
 	font-size: 1em;
@@ -35,9 +27,11 @@ button {
 
 a {
 	text-decoration: none;
+	font-style: italic;
+}
+
+select {
 	font-family: "adelle-sans", serif;
 	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.6;
-	font-style: italic;
+	font-size: 0.75em;
 }
