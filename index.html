@@ -4,14 +4,16 @@
 		<title>GreenThumb</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="js/responsive-nav.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/bigslide.js"></script>
 		<script src="//use.typekit.net/juk4res.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<header>
 			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies"><!--
-			--><nav class="nav-collapse">
+			--><a href="#menu" class="menu-link">&#9776;</a>
+			<nav id="menu" class="panel" role="navigation">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="rec-info.html">Get Recommendation</a></li>
@@ -32,8 +34,10 @@
 			<footer>
 				<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
 			</footer>
-			<script>
-  var nav = responsiveNav(".nav-collapse");
+		<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
 </script>
 		</body>
 		</html>
