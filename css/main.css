@@ -85,7 +85,7 @@ h1, h2, h3, p, label, li, a, .rec, em {
 a:hover {
   color: white; }
 
-button a:hover {
+button:hover a {
   color: #a2ae79; }
 
 .field input:focus {
