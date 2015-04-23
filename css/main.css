@@ -123,7 +123,8 @@ body {
   padding: 4rem 2rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-radius: 3px; }
 
 .photo, img {
   width: 100%; }
@@ -237,9 +238,9 @@ footer {
 /***nav***/
 .panel {
   position: fixed;
-  left: -12.5em;
+  left: -13em;
   /*left or right and the width of your navigation panel*/
-  width: 12.5em;
+  width: 13em;
   /*should match the above value*/ }
 
 .push {

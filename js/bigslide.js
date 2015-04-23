@@ -25,7 +25,7 @@
       'menu': ('#menu'),
       'push': ('.push'),
       'side': 'left',
-      'menuWidth': '12.5em',
+      'menuWidth': '13em',
       'speed': '300',
       'state': 'closed',
       'activeBtn': 'active',
