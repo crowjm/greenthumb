@@ -51,7 +51,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 900;
-  font-size: 2em; }
+  font-size: 1.75em; }
 
 h2 {
   font-weight: 700;
@@ -79,6 +79,9 @@ select {
 .logo, footer, header {
   background-color: #f8b771; }
 
+.wrapper {
+  background-color: rgba(250, 250, 250, 0.85); }
+
 h1, h2, h3, p, label, li, a, .rec, em {
   color: #163821; }
 
@@ -94,26 +97,93 @@ button:hover a {
   color: #163821; }
 
 form {
-  background-color: #d3e5f9; }
+  background-color: #bcd7f7; }
 
 /***Base for global and mobile***/
+/***nav***/
+.header-wrapper {
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.panel {
+  position: fixed;
+  left: -12.5em;
+  /*left or right and the width of your navigation panel*/
+  width: 12.5em;
+  /*should match the above value*/ }
+
+.push {
+  position: relative; }
+
+.menu-link {
+  position: absolute;
+  top: 13px;
+  left: 25px;
+  z-index: 9999;
+  font-size: 1.5rem;
+  font-style: normal; }
+
+#menu {
+  height: 100%;
+  background-color: #8fbcf1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  z-index: 9999; }
+  #menu ul {
+    margin-top: 20px; }
+    #menu ul li {
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid white; }
+
 /***general layout***/
+body {
+  overflow-x: hidden; }
+
+.background {
+  background-image: url(../images/garden-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
 .wrapper {
   width: 85%;
   max-width: 1140px;
   margin: 0 auto;
-  clear: both; }
+  clear: both;
+  padding: 4rem 2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 header, footer {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
-header {
-  overflow: hidden;
-  margin-bottom: 4rem; }
+.header-image {
+  width: 203px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  .header-image img {
+    width: 20%;
+    float: left; }
+  .header-image h2 {
+    text-align: left;
+    margin-bottom: 0;
+    float: left;
+    padding-top: 5px; }
 
 footer {
-  clear: both;
-  margin-top: 2em; }
+  clear: both; }
   footer p {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -127,16 +197,8 @@ footer {
 .carrots {
   width: 25%; }
 
-.log-in-carrots {
-  width: 15%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 1.754%;
-  margin-top: 2em; }
-
 .centered-carrots {
-  width: 15%;
+  width: 25%;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -157,8 +219,7 @@ button {
   color: #163821;
   border: 3px solid #163821;
   border-radius: 3px;
-  background-color: #a2ae79;
-  margin-bottom: 1em; }
+  background-color: #a2ae79; }
 
 button:hover {
   color: #a2ae79;
@@ -166,10 +227,11 @@ button:hover {
   border: 3px solid #a2ae79; }
 
 .info {
-  margin-bottom: 5.262%;
   max-width: 600px;
   margin-right: auto;
   margin-left: auto; }
+  .info p {
+    margin-bottom: 2.5em; }
 
 h2, h1 {
   text-align: center;
@@ -177,29 +239,14 @@ h2, h1 {
 
 form {
   border-radius: 3px;
-  padding: 1em;
-  -moz-box-sizing: border-box;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 2em;
   max-width: 600px;
   margin-right: auto;
   margin-left: auto; }
-
-/***index***/
-.info {
-  margin-bottom: 4em;
-  margin-top: 4em; }
-  .info p {
-    margin-bottom: 2.5em; }
-
-/***main screen, first after log in***/
-.welcome {
-  margin-bottom: 5.262%;
-  text-align: center; }
-
-.get-growing {
-  margin-bottom: 5em; }
 
 /***Get A Recommendation Page***/
 .dropdown-rec {
@@ -208,19 +255,16 @@ form {
     margin-bottom: 0.877%; }
   .dropdown-rec select {
     border: 1px solid #163821;
-    width: 50%; }
+    width: 100%; }
   .dropdown-rec select:focus {
     outline: none;
-    border: 5px solid #8fbcf1; }
+    border: 5px solid #f59e41; }
 
 .last-dropdown-rec {
   margin-bottom: 14.032%; }
 
 .info p {
   color: #2c6f41; }
-
-.get-garden {
-  margin-bottom: 4.5em; }
 
 /***Recommendation Page***/
 .rec {
@@ -244,9 +288,6 @@ form {
   .companion-planting a {
     border-bottom: 1px solid white; }
 
-.log-garden {
-  margin-bottom: 5em; }
-
 /***Journal Update Page***/
 .journal-entry h3 {
   margin-bottom: 1em;
@@ -255,7 +296,8 @@ form {
   margin-bottom: 0.75em; }
 
 textarea {
-  width: 100%;
+  width: 96%;
+  height: 200px;
   margin-bottom: 2.5em; }
 
 .journal-form {
@@ -274,6 +316,10 @@ textarea {
 
 /***medium media query***/
 @media screen and (min-width: 675px) {
+  /***index***/
+  .centered-carrots {
+    width: 25%; }
+
   /***rec info page***/
   .dropdown-rec {
     max-width: 74.557%;
@@ -286,6 +332,11 @@ textarea {
   .last-dropdown-rec {
     margin-bottom: 10.524%; }
 
+  .info p {
+    max-width: 74.557%;
+    margin-right: auto;
+    margin-left: auto; }
+
   /***rec page***/
   .first-rec {
     margin-top: 0; }
@@ -294,7 +345,7 @@ textarea {
     width: 45%;
     float: left; }
 
-  .rec:nth-of-type(even) {
+  .rec:nth-of-type(odd) {
     margin-right: 10%; }
 
   .rec-group {
@@ -318,7 +369,7 @@ textarea {
     width: 45%;
     float: left; }
 
-  .journal:nth-of-type(even) {
+  .journal:nth-of-type(odd) {
     margin-right: 10%; }
 
   .journal-group {
@@ -330,11 +381,11 @@ textarea {
     width: 30%;
     float: left; }
 
-  .rec:nth-of-type(3n+3) {
+  .rec:nth-of-type(3n+2) {
     margin-right: 5%;
     margin-left: 5%; }
 
-  .rec:nth-of-type(even) {
+  .rec:nth-of-type(odd) {
     margin-right: 0; }
 
   /***journal page***/
@@ -342,7 +393,7 @@ textarea {
     width: 30%;
     float: left; }
 
-  .journal:nth-of-type(even) {
+  .journal:nth-of-type(odd) {
     margin-right: 0; }
 
   .journal:nth-of-type(3n+2) {

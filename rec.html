@@ -10,68 +10,74 @@
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
-		<header>
-			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies">
+		<header class="push">
+			<div class="header-wrapper">
+				<a href="#menu" class="menu-link">&#9776;</a>
+				<nav id="menu" class="panel" role="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="rec-info.html">Get Recommendation</a></li>
+						<li><a href="rec.html">View Recommendations</a></li>
+						<li><a href="journal-entry.html">Update Journal</a></li>
+						<li><a href="journal.html">View Journal</a></li>
+					</ul>
+				</nav>
+				<div class="header-image">
+					<img src="images/sidecarrots.svg" alt"illustration of carrots">
+					<h2>GreenThumb</h2>
+				</div>
+			</div>
 		</header>
-		<a href="#menu" class="menu-link">&#9776;</a>
-			<nav id="menu" class="panel" role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="rec-info.html">Get Recommendation</a></li>
-					<li><a href="rec.html">View Recommendations</a></li>
-					<li><a href="journal-entry.html">Update Journal</a></li>
-					<li><a href="journal.html">View Journal</a></li>
-				</ul>
-			</nav>
-	<div class="wrapper">
-		<div>
-			<img src="images/sidecarrots.svg" alt="illustration of carrots" class="centered-carrots">
-			<h1>My Recommendations</h1>
-		</div>
-		<div class="rec-group">
-			<div class="rec first-rec">
-				<h3>Texas / April / Full Sun</h3>
-				<ul>
-					<li>Watermelon</li>
-					<li>Okra</li>
-					<li>Tomatoes</li>
-					<li>Hot Peppers</li>
-					<li>Yellow Squash</li>
-				</ul>
-			</div>
-			<div class="rec">
-				<h3>Texas / September / Full Sun</h3>
-				<ul>
-					<li>Brussel Sprouts</li>
-					<li>Cauliflower</li>
-					<li>Chard</li>
-					<li>Kale</li>
-					<li>Dill</li>
-				</ul>
-			</div>
-			<div class="rec">
-				<h3>Texas / October / Some Sun</h3>
-				<ul>
-					<li>Spinach</li>
-					<li>Radishes</li>
-					<li>Cabbage</li>
-					<li>Broccoli</li>
-					<li>Carrots</li>
-				</ul>
+		<div class="background">
+			<div class="wrapper push">
+				<div>
+					<h1>My Recommendations</h1>
+				</div>
+				<div class="rec-group">
+					<div class="rec first-rec">
+						<h3>Texas / April / Full Sun</h3>
+						<ul>
+							<li>Watermelon</li>
+							<li>Okra</li>
+							<li>Tomatoes</li>
+							<li>Hot Peppers</li>
+							<li>Yellow Squash</li>
+						</ul>
+					</div>
+					<div class="rec">
+						<h3>Texas / September / Full Sun</h3>
+						<ul>
+							<li>Brussel Sprouts</li>
+							<li>Cauliflower</li>
+							<li>Chard</li>
+							<li>Kale</li>
+							<li>Dill</li>
+						</ul>
+					</div>
+					<div class="rec">
+						<h3>Texas / October / Some Sun</h3>
+						<ul>
+							<li>Spinach</li>
+							<li>Radishes</li>
+							<li>Cabbage</li>
+							<li>Broccoli</li>
+							<li>Carrots</li>
+						</ul>
+					</div>
+				</div>
+				<div class="companion-planting">
+					<p>Did you know that some plants don't get along? Read about <a href="http://www.motherearthnews.com/organic-gardening/companion-planting-guide-zmaz81mjzraw.aspx">companion planting</a> before you plant your seeds!</p>
+				</div>
+				<button class="log-garden"><a href="journal-entry.html">LOG GARDEN</a></button>
 			</div>
 		</div>
-		<div class="companion-planting">
-			<p>Did you know that some plants don't get along? Read about <a href="http://www.motherearthnews.com/organic-gardening/companion-planting-guide-zmaz81mjzraw.aspx">companion planting</a> before you plant your seeds!</p>
-		</div>
-		<button class="log-garden"><a href="journal-entry.html">LOG GARDEN</a></button>
-	</div>
-	<footer>
-		<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
-	</footer>
+		<footer>
+			<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
+		</footer>
 		<script>
-    $(document).ready(function() {
-        $('.menu-link').bigSlide();
-    });
-</script>
-</body>
+		$(document).ready(function() {
+		$('.menu-link').bigSlide();
+		});
+		</script>
+	</body>
 </html>

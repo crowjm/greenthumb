@@ -10,34 +10,41 @@
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
-		<header>
-			<img src="images/veggies-header2.jpg" class="logo" alt="photo of freshly picked veggies">
+		<header class="push">
+			<div class="header-wrapper">
+				<a href="#menu" class="menu-link">&#9776;</a>
+				<nav id="menu" class="panel" role="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="rec-info.html">Get Recommendation</a></li>
+						<li><a href="rec.html">View Recommendations</a></li>
+						<li><a href="journal-entry.html">Update Journal</a></li>
+						<li><a href="journal.html">View Journal</a></li>
+					</ul>
+				</nav>
+				<div class="header-image">
+					<img src="images/sidecarrots.svg" alt"illustration of carrots">
+					<h2>GreenThumb</h2>
+				</div>
+			</div>
 		</header>
-		<a href="#menu" class="menu-link">&#9776;</a>
-			<nav id="menu" class="panel" role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="rec-info.html">Get Recommendation</a></li>
-					<li><a href="rec.html">View Recommendations</a></li>
-					<li><a href="journal-entry.html">Update Journal</a></li>
-					<li><a href="journal.html">View Journal</a></li>
-				</ul>
-			</nav>
-		<div class="wrapper">
-			<img src="images/sidecarrots.svg" class="log-in-carrots" alt"illustration of carrots">
-			<h1 class="welcome">Welcome to GreenThumb!</h1>
-			<div class="info">
-				<p>GreenThumb helps you plan your garden. Select your state, planting month, and amount of sunlight your garden will receive, and we'll suggest a list of crops for you to plant.</p>
-				<button><a href="rec-info.html">GET STARTED</a></button>
+		<div class="background">
+			<div class="wrapper push">
+				<img src="images/sidecarrots.svg" alt"illustration of carrots" class="centered-carrots">
+				<h1 class="welcome">Welcome to GreenThumb!</h1>
+				<div class="info">
+					<p>GreenThumb helps you plan your garden. Select your state, planting month, and amount of sunlight your garden will receive, and we'll suggest a list of crops for you to plant.</p>
+					<button><a href="rec-info.html">GET STARTED</a></button>
+				</div>
 			</div>
 		</div>
-			<footer>
-				<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
-			</footer>
+		<footer>
+			<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
+		</footer>
 		<script>
-    $(document).ready(function() {
-        $('.menu-link').bigSlide();
-    });
-</script>
-		</body>
-		</html>
+		$(document).ready(function() {
+		$('.menu-link').bigSlide();
+		});
+		</script>
+	</body>
+</html>

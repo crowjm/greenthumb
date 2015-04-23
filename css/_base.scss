@@ -1,26 +1,101 @@
 /***Base for global and mobile***/
+/***nav***/
+.header-wrapper {
+	width: 85%;
+	max-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 
+.panel {
+    position: fixed;
+    left: -12.5em; /*left or right and the width of your navigation panel*/
+    width: 12.5em; /*should match the above value*/
+}
+
+.push {
+    position: relative;
+}
+
+.menu-link {
+	position: absolute;
+	top: 13px;
+	left: 25px;
+	z-index: 9999;
+	font-size: 1.5rem;
+	font-style: normal;
+}
+
+#menu {
+	height: 100%;
+	background-color: $lightblue;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	z-index: 9999;
+	ul {
+		margin-top: 20px;
+		li {
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid white;
+		}
+	}
+}
 
 /***general layout***/
+body {
+	overflow-x: hidden;
+}
+
+.background {
+	background-image: url(../images/garden-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+
 .wrapper {
 	width: 85%;
 	max-width: 1140px;
 	margin: 0 auto;
 	clear: both;
+	padding: 4rem 2rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 header, footer {
 	width: 100%;
+	overflow: hidden;
 }
 
-header {
+.header-image {
+	width: 203px;
+	margin-right: auto;
+	margin-left: auto;
 	overflow: hidden;
-	margin-bottom: 4rem;
+	img {
+		width: 20%;
+		float: left;
+	}
+	h2 {
+		text-align: left;
+		margin-bottom: 0;
+		float: left;
+		padding-top: 5px;
+	}
 }
 
 footer {
 	clear: both;
-	margin-top: 2em;
 	p {
 		padding-top: 1em;
 		padding-bottom: 1em;
@@ -39,17 +114,8 @@ footer {
 	width: 25%;
 }
 
-.log-in-carrots {
-	width: 15%;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: $gut;
-	margin-top: 2em;
-}
-
 .centered-carrots {
-	width: 15%;
+	width: 25%;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -73,7 +139,6 @@ button {
 		border: 3px solid $darkgreen;
 		border-radius: 3px;
 		background-color: $lightgreen;
-		margin-bottom: 1em;
 	}
 
 button:hover {
@@ -83,10 +148,12 @@ button:hover {
 }
 
 .info {
-	margin-bottom: ($gut * 3);
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+	p {
+		margin-bottom: 2.5em;
+	}
 }
 
 h2, h1 {
@@ -96,9 +163,9 @@ h2, h1 {
 
 form {
 	border-radius: 3px;
-	padding: 1em;
-	-moz-box-sizing: border-box;
+	padding: 1rem;
 	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-bottom: 2em;
 	max-width: 600px;
@@ -106,26 +173,16 @@ form {
 	margin-left: auto;
 }
 
-/***index***/
-.info {
-	margin-bottom: 4em;
-	margin-top: 4em;
-	p {
-		margin-bottom: 2.5em;
-	}
-}
 
+// /***main screen, first after log in***/
+// .welcome {
+// 	margin-bottom: ($gut * 3);
+// 	text-align: center;
+// }
 
-
-/***main screen, first after log in***/
-.welcome {
-	margin-bottom: ($gut * 3);
-	text-align: center;
-}
-
-.get-growing {
-	margin-bottom: 5em; 
-}
+// .get-growing {
+// 	margin-bottom: 5em; 
+// }
 
 
 /***Get A Recommendation Page***/
@@ -136,11 +193,11 @@ form {
 	}
 	select {
 		border: 1px solid $darkgreen;
-		width: 50%;
+		width: 100%;
 	}
 	select:focus {
 		outline: none;
-		border: 5px solid $lightblue;
+		border: 5px solid $orange;
 	}
 }
 
@@ -152,10 +209,6 @@ form {
 	p {
 		color: lighten($darkgreen, 15%);
 	}
-}
-
-.get-garden {
-	margin-bottom: 4.5em;
 }
 
 /***Recommendation Page***/
@@ -185,12 +238,6 @@ form {
 	}
 }
 
-.log-garden {
-	margin-bottom: 5em;
-}
-
-
-
 /***Journal Update Page***/
 .journal-entry {
 	h3 {
@@ -203,7 +250,8 @@ form {
 }
 
 textarea {
-	width: 100%;
+	width: 96%;
+	height: 200px;
 	margin-bottom: 2.5em;
 }
 

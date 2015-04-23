@@ -25,11 +25,11 @@
       'menu': ('#menu'),
       'push': ('.push'),
       'side': 'left',
-      'menuWidth': '15.625em',
+      'menuWidth': '12.5em',
       'speed': '300',
       'state': 'closed',
       'activeBtn': 'active',
-      'easyClose': false
+      'easyClose': true
     }, options);
 
     // store the menu's state in the model
