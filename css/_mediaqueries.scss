@@ -1,6 +1,11 @@
 /***medium media query***/
 
 @media screen and (min-width:675px) {
+/***general***/
+h1 {
+	font-size: 2rem;
+}
+
 /***index***/
 .centered-carrots {
 	width: 25%;
