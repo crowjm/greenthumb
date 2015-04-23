@@ -1,54 +1,15 @@
 /***Base for global and mobile***/
-/***nav***/
-.header-wrapper {
-	width: 85%;
-	max-width: 1140px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
-
-.panel {
-    position: fixed;
-    left: -12.5em; /*left or right and the width of your navigation panel*/
-    width: 12.5em; /*should match the above value*/
-}
-
-.push {
-    position: relative;
-}
-
-.menu-link {
-	position: absolute;
-	top: 13px;
-	left: 25px;
-	z-index: 9999;
-	font-size: 1.5rem;
-	font-style: normal;
-}
-
-#menu {
-	height: 100%;
-	background-color: lighten($orange, 10%);
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding-left: 1rem;
-	z-index: 9999;
-	ul {
-		margin-top: 20px;
-		li {
-			margin-bottom: 0.5rem;
-			padding-bottom: 0.5rem;
-			border-bottom: 1px solid white;
-		}
-	}
-}
-
 /***general layout***/
 h1 {
-	font-size: 1.25rem;
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.15rem;
+}
+
+h3 {
+	font-size: 1.05em;
 }
 
 body {
@@ -195,6 +156,54 @@ footer {
 			border-bottom: none;
 		}
 	}
+	}
+}
+
+.header-wrapper {
+	width: 85%;
+	max-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+
+/***nav***/
+.panel {
+    position: fixed;
+    left: -12.5em; /*left or right and the width of your navigation panel*/
+    width: 12.5em; /*should match the above value*/
+}
+
+.push {
+    position: relative;
+}
+
+.menu-link {
+	position: absolute;
+	top: 13px;
+	left: 25px;
+	z-index: 9999;
+	font-size: 1.5rem;
+	font-style: normal;
+}
+
+#menu {
+	height: 100%;
+	background-color: lighten($orange, 10%);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	z-index: 9999;
+	ul {
+		margin-top: 20px;
+		li {
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid white;
+		}
 	}
 }
 
