@@ -164,33 +164,6 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-header, footer {
-  width: 100%;
-  overflow: hidden; }
-
-.header-image {
-  width: 203px;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden; }
-  .header-image img {
-    width: 20%;
-    float: left; }
-  .header-image h2 {
-    text-align: left;
-    margin-bottom: 0;
-    float: left;
-    padding-top: 5px; }
-
-footer {
-  clear: both; }
-  footer p {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center; }
-  footer a {
-    border-bottom: 1px solid white; }
-
 .photo, img {
   width: 100%; }
 
@@ -247,6 +220,49 @@ form {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto; }
+
+/***header and footer***/
+header, footer {
+  width: 100%;
+  overflow: hidden; }
+
+.header-image {
+  width: 203px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  .header-image img {
+    width: 20%;
+    float: left; }
+  .header-image h2 {
+    text-align: left;
+    margin-bottom: 0;
+    float: left;
+    padding-top: 5px; }
+
+footer {
+  clear: both; }
+  footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center; }
+  footer a {
+    border-bottom: 1px solid white; }
+  footer .timer {
+    font-size: 1.5rem; }
+  footer .footer-email {
+    text-align: center; }
+    footer .footer-email input {
+      width: 225px;
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto; }
+    footer .footer-email .footer-button {
+      display: inline-block;
+      width: 90px;
+      padding: 0; }
+      footer .footer-email .footer-button a {
+        border-bottom: none; }
 
 /***Get A Recommendation Page***/
 .dropdown-rec {

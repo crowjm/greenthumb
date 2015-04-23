@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/bigslide.js"></script>
+		<script src="js/jquery.countTo.js"></script>
 		<script src="//use.typekit.net/juk4res.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
@@ -45,7 +46,14 @@
 				</form>
 			</div>
 		</div>
-		<footer>
+		<footer class="push">
+			<p><span class="timer"></span> gardens planted.</p>
+			<div class="footer-email">
+				<input type="email" placeholder="Join our email list."></input><!--
+				--><button class="footer-button">
+				<a href="#"><p>SUBMIT</p></a>
+				</button>
+			</div>
 			<p>Built using the <a href="http://growstuff.org/policy/api">GrowStuff API</a>.</p>
 		</footer>
 		<script>
@@ -53,5 +61,22 @@
 		$('.menu-link').bigSlide();
 		});
 		</script>
+		<script type="text/javascript"><!--
+		$('.timer').countTo({
+		from: 50,
+		to: 2500,
+		speed: 3600000,
+		refreshInterval: 5000,
+		formatter: function (value, options) {
+		return value.toFixed(options.decimals);
+		},
+		onUpdate: function (value) {
+		console.debug(this);
+		},
+		onComplete: function (value) {
+		console.debug(this);
+		}
+		});
+		//--></script>
 	</body>
 </html>

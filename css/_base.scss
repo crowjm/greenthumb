@@ -72,40 +72,6 @@ body {
 	box-sizing: border-box;
 }
 
-header, footer {
-	width: 100%;
-	overflow: hidden;
-}
-
-.header-image {
-	width: 203px;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
-	img {
-		width: 20%;
-		float: left;
-	}
-	h2 {
-		text-align: left;
-		margin-bottom: 0;
-		float: left;
-		padding-top: 5px;
-	}
-}
-
-footer {
-	clear: both;
-	p {
-		padding-top: 1em;
-		padding-bottom: 1em;
-		text-align: center;
-	}
-	a {
-		border-bottom: 1px solid white;
-	}
-}
-
 .photo, img {
 	width: 100%;
 }
@@ -173,6 +139,60 @@ form {
 	margin-left: auto;
 }
 
+/***header and footer***/
+header, footer {
+	width: 100%;
+	overflow: hidden;
+}
+
+.header-image {
+	width: 203px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	img {
+		width: 20%;
+		float: left;
+	}
+	h2 {
+		text-align: left;
+		margin-bottom: 0;
+		float: left;
+		padding-top: 5px;
+	}
+}
+
+footer {
+	clear: both;
+	p {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: center;
+	}
+	a {
+		border-bottom: 1px solid white;
+	}
+	.timer {
+		font-size: 1.5rem;
+	}
+	.footer-email {
+		text-align: center;
+		input {
+		width: 225px;
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.footer-button {
+		display: inline-block;
+		width: 90px;
+		padding: 0;
+		a {
+			border-bottom: none;
+		}
+	}
+	}
+}
 
 // /***main screen, first after log in***/
 // .welcome {
