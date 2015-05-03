@@ -273,6 +273,11 @@ footer {
       border-bottom: 1px solid white; }
 
 /***Get A Recommendation Page***/
+.get-garden {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem; }
+
 .dropdown-rec {
   margin-bottom: 7.016%; }
   .dropdown-rec h3 {
@@ -333,7 +338,8 @@ textarea {
   box-sizing: border-box; }
 
 .journal-quantity, .journal-plant {
-  display: inline-block; }
+  display: inline-block;
+  font-weight: bold; }
 
 /***medium media query***/
 @media screen and (min-width: 675px) {

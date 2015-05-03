@@ -226,6 +226,12 @@ footer {
 
 
 /***Get A Recommendation Page***/
+.get-garden {
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
 .dropdown-rec {
 	margin-bottom: ($gut * 4);
 	h3 {
@@ -308,4 +314,5 @@ textarea {
 
 .journal-quantity, .journal-plant {
 	display: inline-block;
+	font-weight: bold;
 }
