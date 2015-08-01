@@ -357,6 +357,11 @@ textarea {
   .centered-carrots {
     width: 25%; }
 
+  /***get garden page***/
+  .get-garden {
+    margin-right: auto;
+    margin-left: auto; }
+
   /***rec info page***/
   .dropdown-rec {
     max-width: 74.557%;
